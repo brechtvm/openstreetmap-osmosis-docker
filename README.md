@@ -3,6 +3,6 @@ Simple dockerfile to run Openstreetmap's [Osmosis tool](http://wiki.openstreetma
 
 Usage:
 ```
-docker --rm -t -i -v /some/local/path/to/your/data:/data run docker pull farberg/openstreetmap-osmosis-docker
+docker run --rm -t -i -v /some/local/path/to/your/data:/data farberg/openstreetmap-osmosis-docker
 ```
 
