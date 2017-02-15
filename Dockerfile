@@ -1,8 +1,8 @@
 FROM debian:jessie
 
-MAINTAINER Dennis Pfisterer <github@farberg.de>
+MAINTAINER Brecht Van Maldergem <brecht.vanmaldergem@gmail.com>
 
-RUN apt-get update && apt-get install -qq osmosis osmctools libproj-dev proj-bin
+RUN apt-get update && apt-get install -qq osmosis osmctools libproj-dev proj-bin wget
 
 RUN mkdir /data
 
