@@ -15,3 +15,7 @@ OSMUpdate:
 ```
 docker run --rm -t -i -v f:/map/data/OSM/Planet:/data/osm-data/ --entrypoint osmupdate openstreetmap-osmosis-docker-bvm /data/osm-data/planet-latest.osm.pbf /data/osm-data/planet-latest-updated.osm.pbf
 ```
+OSMOSIS:
+```
+docker run --rm -t -i -v f:/map/data/OSM/Planet:/data/osm-data/ openstreetmap-osmosis-docker-bvm --rbf file="/data/osm-data/planet-latest.osm.pbf" workers=4 --bp file="/data/osm-data/CM_0.poly" completeWays=yes --wb file="/data/osm-data/Cameroon_20170215.osm.pbf"
+```
